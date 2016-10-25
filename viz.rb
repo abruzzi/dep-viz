@@ -18,3 +18,4 @@ xlsx.each_row_streaming(offset: 1) do |row|
 end
 
 graph.output(:png => 'U2000-1121.png')
+graph.output(:dot => 'U2000-1121.dot')
