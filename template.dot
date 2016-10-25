@@ -1,0 +1,7 @@
+digraph graph {
+	graph [dpi=300];
+	fontname="PT Mono";
+
+    edge [color="#05c3de", fontname="PT Mono", fontsize=10];
+	node [color="#3C7CCC", shape="record", fontname="PT Mono", fontsize=10];
+}
