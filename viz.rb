@@ -10,7 +10,7 @@ graph.node['shape'] = 'record'
 
 xlsx = Roo::Excelx.new('./U2000-1121.xlsx')
 xlsx.each_row_streaming(offset: 1) do |row|
-    graph.add_nodes(row[0].value)
+    graph.add_nodes(row[0].value, :label => row[1].value)
 
     if(row[4]) 
         graph.add_edges(row[4].value, row[0].value)
